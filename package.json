@@ -22,6 +22,7 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^10.2.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/bun": "latest",

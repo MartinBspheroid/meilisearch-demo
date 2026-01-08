@@ -6,6 +6,10 @@ out
 dist
 *.tgz
 
+# generated data files
+transactions.json
+transactions.csv
+
 # code coverage
 coverage
 *.lcov

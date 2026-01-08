@@ -10,7 +10,7 @@ let transactionsCsv: string | null = null;
 
 async function loadTransactionData(): Promise<void> {
   try {
-    const jsonFile = Bun.file("../transactions.json");
+    const jsonFile = Bun.file("./transactions.json");
     if (await jsonFile.exists()) {
       transactionsJson = await jsonFile.text();
       console.log("✅ Loaded transactions.json");
@@ -22,7 +22,7 @@ async function loadTransactionData(): Promise<void> {
   }
 
   try {
-    const csvFile = Bun.file("../transactions.csv");
+    const csvFile = Bun.file("./transactions.csv");
     if (await csvFile.exists()) {
       transactionsCsv = await csvFile.text();
       console.log("✅ Loaded transactions.csv");

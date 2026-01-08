@@ -55,6 +55,21 @@ The application will be available at `http://localhost:3000`.
 bun start
 ```
 
+### 5. Generate Demo Data (Optional)
+
+The demo uses synthetic financial transaction data. If you need to regenerate or customize the dataset, run the data generation script:
+
+```bash
+bun run generate_financial_data.ts
+```
+
+This script generates 200,000 realistic financial transaction records (the demo uses a subset of 50,000) in two formats:
+
+- **transactions.json**: Simplified JSON records with basic transaction fields (id, type, amount, currency, status, account, description, timestamp)
+- **transactions.csv**: Comprehensive CSV records with additional fields including client information, merchant details, location data, risk scores, processing times, and more
+
+The data generation uses Faker.js to create diverse, realistic financial data suitable for demonstrating various search and filtering capabilities.
+
 ## Demo Flow
 
 The presentation is structured in three main sections:
